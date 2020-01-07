@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "508832983931",
+    "firebase_url": "https://lbpmonitor-76dfe.firebaseio.com",
+    "project_id": "lbpmonitor-76dfe",
+    "storage_bucket": "lbpmonitor-76dfe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:508832983931:android:2414e70b40b10b0d",
+        "android_client_info": {
+          "package_name": "com.ait.minju.lbpmonitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "508832983931-nbmnub23gkdf0bhpkf9dhl9ruh23ngfj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSVc6SC2nwWMyQxWf9qgX61A3iFP4m6aI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

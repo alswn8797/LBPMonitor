@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/top_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/topButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:text="SAVE"
+                        android:textColor="@color/colorWhite" />
+
+                    <Button
+                        android:id="@+id/btnBtConnect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:text="Connect Device"
+                        android:textColor="@color/colorWhite" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:layout_below="@id/topButton"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/graph_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_layout">
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:id="@+id/lineChart1"></com.github.mikephil.charting.charts.LineChart>
+
+                <LinearLayout
+                    android:id="@+id/max1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lineChart1"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/max" />
+
+                    <TextView
+                        android:id="@+id/max1Value"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:gravity="right"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/min1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/max1"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/min" />
+
+                    <TextView
+                        android:id="@+id/min1Value"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:gravity="right"/>
+                </LinearLayout>
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:id="@+id/lineChart2"
+                    android:layout_below="@id/min1"></com.github.mikephil.charting.charts.LineChart>
+
+                <LinearLayout
+                    android:id="@+id/max2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/lineChart2"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/max" />
+
+                    <TextView
+                        android:id="@+id/max2Value"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:gravity="right"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/min2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/max2"
+                    android:gravity="right">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/min" />
+
+                    <TextView
+                        android:id="@+id/min2Value"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:gravity="right"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
